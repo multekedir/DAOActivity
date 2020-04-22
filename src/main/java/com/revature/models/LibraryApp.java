@@ -2,9 +2,16 @@ package com.revature.models;
 
 import com.revature.data.GenericDAO;
 
+/**
+ * The type Library app.
+ * Edward and Multezem
+ */
 public class LibraryApp {
 
 
+    /**
+     * Instantiates a new Library app.
+     */
     public LibraryApp() {
         GenericDAO dao = new GenericDAO();
 
@@ -35,15 +42,35 @@ public class LibraryApp {
         }
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         LibraryApp main = new LibraryApp();
     }
 
+    /**
+     * The type Books.
+     */
     public class Books {
+        /**
+         * The Id.
+         */
         int id = 0;
+        /**
+         * The Name.
+         */
         String name;
 
+        /**
+         * Instantiates a new Books.
+         *
+         * @param id   the id
+         * @param name the name
+         */
         public Books(int id, String name) {
             this.id = id;
             this.name = name;
